@@ -1,0 +1,15 @@
+version: '3.10'
+
+services:
+  pixel:
+    container_name: tasksys
+    image: tasksys
+    build: .
+    ports:
+      - 80:8000
+    # healthcheck:
+    #   test: ["CMD", "curl", "-f", "http://localhost/"]
+    #   interval: 15s
+    #   timeout: 5s
+    #   retries: 5
+    #   start_period: 15s
